@@ -70,7 +70,8 @@ print("%D", var)
 print(f" {var}") #string literals
 
 #keywords
-  type(var) # returns what type of data type 
+  type(var) # returns what type of data type `<class 'str'>`
+  isinstance(i, dataType) # returns bool
   reversed(var) # reverses any iterable arrays
 
 #casting 
