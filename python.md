@@ -91,6 +91,9 @@ char = ''
 
 ``` python
 len(strVar) # returns int
+myString.rstrip() # removes any trailing whitespace (or specified characters) from the right end of a string
+myString.split() # divides a string into a list of substrings based on a specified delimiter (separator)
+myString.split(string<delimiter>, int<maxSplit>) # delimeters such as " ", "_", "-" that seperates word
 ```
 
 ### Access chars in string using index
@@ -176,15 +179,17 @@ newVar = tuple(var) # used to create a list from an iterable object like a list 
 var = [x * <int> for x in range(int<start>, int<end>)] # fill a list
 var = [list.function() for list in lists]
 var = [x for x in xs if x <operator> <int>]
+var2 = [int(x) for x in myList] # converts all number in strings format into strings
 ```
 
 #### <a id="dal3">Built-In Functions </a>
 
 ``` python
-var.append(<var>) # adds this value to the list
-var.remove(var)   # removes first occurance of the value
-var.pop(index)    # removes a value by index
-var.clear()       # clears the list
+var.append(<var>)       # adds this value to the list
+var.insert(<i>, <val>)  # adds val in the chosen index
+var.remove(var)         # removes first occurance of the value
+var.pop(index)          # removes a value by index
+var.clear()             # clears the list
 ```
 
 #### <a id="dal4">2D List </a>
